@@ -13,8 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 校验静态文件是否存在
-        run: 
-|
+        run: |
           if [ -f "dist/index.html" ]; then
             echo "✅ dist/index.html 文件存在，校验通过！"
           else
